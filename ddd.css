@@ -13,7 +13,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 2px;
-  text-shadow:1px 1px slategray;
+  text-shadow:1px 1px rgb(206, 209, 212);
 }
 .carousel-caption h6{
   font-size: 60px;
@@ -138,6 +138,55 @@ navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: transparent;}
+dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: -2px;
+  left: 100%;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 200px; 
+  border-radius: 0;
+  outline: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  
+  border-left-color: #ccc;
+  border-width: 5px 0 5px 5px;
+  margin-right: 0px;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+
+}
+
 
 
 
