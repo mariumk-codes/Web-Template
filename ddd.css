@@ -32,13 +32,14 @@
   font-size: 25px;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   color: white;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: white
+  color: white;
+  letter-spacing: px;
 }
 .navbar-toggler {
 	background: rgb(14, 13, 13);
@@ -54,29 +55,32 @@ navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.
 }
 .navbar-toggler {
 	padding: 1px 5px;
-	font-size: 18px;
+  font-size: 18px;
 	line-height: 0.3;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
 	color: rgb(5, 5, 5);
 }
-.dropdown-toggle::after { 
-  content: none; 
-} 
-.dropdown:hover .dropdown-menu {display: block;}
-.dropdown-header{
-  text-emphasis: none;
-  font-size: 18px;
-  font-family:'Open Sans Condensed';
-  color: black;
+.navbar-nav .navbar-right{
+  margin-left: 900px;
+  
 }
+.shopping-cart{
+  color: rgb(255, 255, 255);
+  margin-left: 12px;
+}
+.shopping-cart:hover{
+  color: rgb(0, 0, 0);
+}
+
 .input-group.md-form.form-sm.form-2 input.amber-border {
   border: 1px solid #ffca28;
 }
 .wrapper{
-  position:fixed;
-  margin-left: 455px;
+  position: absolute;
+  margin-left: 300px;
   margin-right: 200px;
+  margin-top: 0px;
 }
 .search_box input[type="text"]{
   width: 500px;
@@ -86,32 +90,54 @@ navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.
   border: 1px solid rgb(235, 233, 233);
   border-radius: 15px;
   font-size: 18px;
-  color: rgb(236, 231, 231);
+  color: rgb(245, 240, 240);
   outline:rgb(255, 253, 253);
   padding: 20px;
 }
-button{
-  height: 10px;
-  padding: 0;
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: .2rem 1rem;
+  font-size: 16px;
   border: none;
-  margin-right: 20;
-  vertical-align: top;
-  background:none;
-  cursor: pointer;
+}
+.dropbtn:hover{
+  color: black;
 }
 
-#navbar-cart img {
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 200px;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
   display: block;
-  height: 30px;  
-  width: 30px;
-  margin-right: 20px;
-  margin-top: 0px;
+  padding: 20px 20px;
+  font-size: 13px;
 }
-.navbar-cart:focus {
-  outline: 0 !important;
-}
-.navbar-cart:hover{color: rgb(5, 5, 5);}
 
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(245, 244, 244);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: transparent;}
 
 
 
